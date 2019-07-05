@@ -8,3 +8,7 @@
 
 ### Setup
 * ```echo 1 > prevmax.txt```
+
+### Status Lights
+* top row blinking: new max. clients
+* bottom row off: nodes down!
