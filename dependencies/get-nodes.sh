@@ -1,0 +1,1 @@
+curl -s https://grafana.ffhb.de/api/datasources/proxy/3/query\?db\=ffhb-events\&q\=SELECT%20mean\(%22nodes%22\)%20AS%20%22Nodes%22%20FROM%20%22global%22%20WHERE%20time%20%3E\=%20now\(\)-300s%20and%20time%20%3C\=%20now\(\)-30s | jq '.results' | grep -b1 'Z' | grep '225-            ' | cut -c17-
